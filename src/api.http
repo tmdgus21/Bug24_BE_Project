@@ -1,0 +1,21 @@
+### 사용자 생성
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "TEST",
+  "password": "TEST1234",
+  "role": "USER"
+}
+
+### 로그인
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "TEST",
+  "password": "TEST1234"
+}
+
+### 전체 사용자 조회
+GET http://localhost:8080/users

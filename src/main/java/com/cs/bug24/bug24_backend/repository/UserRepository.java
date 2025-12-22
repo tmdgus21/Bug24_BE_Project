@@ -1,0 +1,9 @@
+package com.cs.bug24.bug24_backend.repository;
+
+import com.cs.bug24.bug24_backend.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    User findByUsername(String username);
+}
